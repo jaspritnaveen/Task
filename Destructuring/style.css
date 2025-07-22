@@ -1,0 +1,24 @@
+.homepage {
+  background-image: url("images/bg-img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.liner-gra {
+  background: linear-gradient(
+    90deg,
+    rgba(42, 123, 155, 0.381) 0%,
+    rgba(87, 199, 134, 0.219) 50%,
+    rgba(237, 221, 83, 0.488) 100%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 1; /* ABOVE background image */
+  pointer-events: none; /* optional: lets clicks pass through */
+}
