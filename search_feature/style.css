@@ -1,0 +1,26 @@
+.fruit {
+  background-color: aliceblue;
+  height: 150px;
+  width: 300px;
+  text-wrap: wrap;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.main-div {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;
+  pad: 10px;
+  gap: 10px;
+}
+
+#search {
+  height: 30px;
+  width: 200px;
+  outline: none;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #dedede;
+}
