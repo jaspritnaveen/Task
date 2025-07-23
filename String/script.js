@@ -29,12 +29,26 @@ var arr = [10, 20, 30, 40, "naveen", "kumar"];
 //for each
 
 
-var arr = [10, 20, 30, 40, "naveen", "kumar"];
+// var arr = ["naveen", "kumar"];
 
-arr.forEach((value,index,array)=>{
-    console.log(array);
+
+// arr.forEach((value,index)=>{
+
+//     arr[index] = value.toUpperCase();
     
-})
+// })
+
+// console.log(arr);
+
+
+const numbers = [1, 2, 3, 4, 5];
+
+const total = numbers.reduce((acc, curr) => acc + curr);
+
+console.log(total); // Output: 15
+
+
+
 
 
 
