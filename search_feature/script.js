@@ -13,7 +13,7 @@ searchInput.addEventListener("input", function () {
     if (fruitName.includes(searchTerm)) {
       fruit.style.display = "block";
     } else {
-      fruit.style.display = "none";
+      fruit.style.display = "none"; 
     }
   });
 });
