@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    #amount {
+    }
+  </style>
+  <body>
+    <button onclick="decremental()">-</button>
+    <button onclick="updateCount()" id="count">1</button>
+    <button onclick="incremental()">+</button>
+
+    <h1 id="amount">1000</h1>
+    <script>
+      let count = 1;
+      let countid = document.getElementById("count");
+      let baseamount = 1000;
+      let baseid = document.getElementById("amount");
+
+      function updateCount() {
+        
+        countid.textContent = count;
+        baseid.textContent = count * baseamount;  
+      }
+
+      function incremental() {
+        count++;
+        updateCount();
+      }
+
+      function decremental() {
+        if (count > 1) {
+          count--;
+        }
+        updateCount();
+      }
+    </script>
+  </body>
+</html>
