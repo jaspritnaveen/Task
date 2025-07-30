@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Example</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-wrapper">
+      <form id="form-details">
+        <div class="input-container">
+          <input type="text" placeholder="Enter your first name" id="fname" />
+          <p id="result"></p>
+          <input
+            type="text"
+            placeholder="Enter your last name"
+            required
+            id="lname"
+          />
+          <input
+            type="number"
+            placeholder="Enter your number"
+            required
+            id="number"
+          />
+          <input
+            type="text"
+            placeholder="Enter your pan number"
+            required
+            id="pan"
+          />
+        </div>
+        <input type="submit" value="Submit" id="submit" />
+      </form>
+    </div>
+    <p id="show"></p>
+
+    <script src="script.js"></script>
+  </body>
+</html>

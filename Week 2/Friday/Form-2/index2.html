@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style2.css" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <div class="form-practise">
+      <div class="left-part">
+        <form id="formData" autocomplete="off" onsubmit="return Validateform()">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Add username" />
+          <span id="username-error"></span>
+          <!--  -->
+
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="abc@gmail.com" />
+          <span id="email-error"></span>
+          <!--  -->
+
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="password" />
+          <span id="password-error"></span>
+          <!--  -->
+
+          <label for="message">Message</label>
+          <input type="text" id="message" placeholder="Message" />
+          <span id="message-error"></span>
+          <!--  -->
+
+          <input type="submit" value="Submit" id="btn" />
+        </form>
+      </div>
+
+      <div class="right-part">
+        <h1>Registration form</h1>
+        <h2>Join Now</h2>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

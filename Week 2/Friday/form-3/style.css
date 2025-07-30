@@ -1,0 +1,35 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.form-part{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.left-side{
+    height: 380px;
+    width: 430px;
+    background-color: rgba(58, 226, 43, 0.574);
+
+}
+
+input{
+    height:30px;
+    width: 400px;
+    outline: none;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 2px;
+    padding: 5px;
+}
+
+#formData{
+    display: flex;
+    flex-direction: column;
+    gap: 10px ;
+    padding: 10px;
+}

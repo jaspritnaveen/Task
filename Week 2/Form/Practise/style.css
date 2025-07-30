@@ -1,0 +1,56 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+.form-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input::placeholder {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+  padding: 5px;
+}
+
+#form-id label {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+  font-style: oblique;
+  font-weight: 500;
+}
+
+#form-id input {
+  height: 30px;
+  width: 300px;
+  outline: none;
+}
+
+form {
+  height: 350px;
+  width: 300px;
+  background-color: rgba(127, 255, 212, 0.515);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#btn {
+  background-color: rgba(237, 132, 12, 0.721);
+  border: none;
+  border-radius: 5px;
+  color: blue;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
