@@ -1,9 +1,95 @@
-*{
-    margin:0%;
-    padding: 0%;
+* {
+  margin: 0%;
+  padding: 0%;
 }
 
-.container-fluid{
-    
-   
+/* Navbar */
+
+.navbar-brand {
+  font-weight: 900;
+  letter-spacing: 1px;
+  font-size: 36px;
+}
+.nav-item:hover {
+  background-color: violet;
+  border-radius: 2px;
+  transition: 0.5 all ease-in-out;
+  color: white;
+}
+
+.parent {
+  position: relative;
+}
+
+.child {
+  top: 10px;
+  width: 34px;
+  position: absolute;
+  left: 1115px;
+  background-color: rgb(255, 166, 0);
+  padding: 5px;
+  height: 36px;
+  border-radius: 50%;
+  color: white;
+  z-index: 5;
+}
+
+.custom-btn {
+  width: 200px;
+}
+
+.carousel-indicators button {
+  background-color: white;
+  height: 60px;
+}
+
+.carousel-caption h5 {
+  background-color: white;
+  width: 186px;
+  padding: 10px;
+  border-radius: 2px;
+}
+
+.carousel-caption h5 span {
+  color: orangered;
+}
+
+.carousel-caption h2 {
+  width: 186px;
+  padding: 10px;
+  text-align: left;
+  color: white;
+  font-size: 62px;
+  letter-spacing: 1px;
+  font-weight: 800;
+  line-height: 72px;
+  width: 50%;
+}
+
+.carousel-caption h5:nth-of-type(2) {
+  background-color: red;
+}
+
+.carousel-item:nth-child(2) .carousel-caption h5 {
+  width: 300px;
+}
+
+.carousel-item:nth-child(3) .carousel-caption h5 {
+  width: 300px;
+}
+
+.carousel-caption {
+  top: 207px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
