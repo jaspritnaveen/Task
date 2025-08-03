@@ -8,9 +8,9 @@
 .navbar-brand {
   font-weight: 900;
   letter-spacing: 1px;
-  font-size: 36px;
+  font-size: 56px;
 }
-.nav-item:hover {
+.nav-item-villa:hover {
   background-color: violet;
   border-radius: 2px;
   transition: 0.5 all ease-in-out;
@@ -148,11 +148,11 @@
   margin-left: 70px;
 }
 
-.video-page{
-  height: 110vh;
+.video-page {
+  height: 120vh !important;
 }
 .blur-text {
-  bottom: -130px;
+  bottom: -320px;
 }
 .blur-text h2 {
   font-size: 48px;
@@ -181,4 +181,256 @@
   align-items: center;
 }
 
- 
+/* Company Status */
+
+.special-box {
+  background-color: #ffeee9;
+  padding: 10px;
+  display: inline-flex;
+  gap: 20px;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 20px;
+  width: 290px;
+  height: 120px;
+}
+
+.special-box h1 {
+  color: #f84712;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.company-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.special-box::after {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #f35525;
+  border-radius: 50%;
+  content: "";
+  right: -25px;
+  top: -25px;
+}
+
+/* Best Deal */
+.best-deal-page {
+  background-color: #fafafa;
+  margin-top: 80px;
+}
+
+.best-deal {
+  background-color: #fafafa;
+  padding: 100px 0px;
+}
+
+.section-heading {
+  margin-bottom: 70px;
+}
+
+.nav-tabs {
+  border-bottom: none !important;
+  margin-bottom: 80px;
+  align-items: end;
+  justify-content: end;
+  margin-top: -130px;
+}
+
+.section-heading h6 {
+  color: #ee626b;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.section-heading h2 {
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-top: 20px;
+  line-height: 56px;
+}
+
+.tabs-content h4 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.best-deal .tabs-content .nav-link {
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #1e1e1e !important;
+  border-radius: 5px;
+  height: 50px;
+  line-height: 50px;
+  display: inline-block;
+  padding: 0px 25px;
+  color: #fff;
+}
+
+.nav-link.active {
+  /* background-color: #f35525 !important; */
+  color: white;
+}
+
+.nav-link {
+  color: white;
+}
+
+.tabs-content .nav-tabs .nav-link.active {
+  background-color: #f35525 !important;
+  color: #fff;
+}
+
+.nav-tabs .nav-link {
+  margin-bottom: -1px;
+  background: 0 0;
+  border: 1px solid transparent;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+.nav-tabs li {
+  padding-right: 0px;
+  border-right: none;
+  margin-left: 20px;
+}
+
+.nav-tabs {
+  border-bottom: none !important;
+  margin-bottom: 80px;
+  align-items: end;
+  justify-content: end;
+  margin-top: -130px;
+}
+
+.info-table {
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  padding: 35px 30px;
+}
+
+.info-table ul li {
+  display: block;
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  font-size: 18px;
+  color: #aaa;
+  font-weight: 400;
+}
+
+.info-table ul li span {
+  font-size: 20px;
+  color: #1e1e1e;
+  font-weight: 700;
+  float: right;
+  display: inline-block;
+}
+
+#css-temp p {
+  font-size: 14px;
+  line-height: 28px;
+  color: #4a4a4a;
+}
+
+.icon-button a {
+  display: inline-block;
+  background-color: #1e1e1e;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  height: 50px;
+  line-height: 50px;
+  padding: 0px 30px 0px 0px;
+  border-radius: 25px;
+  transition: all 0.3s;
+}
+
+.best-deal .icon-button {
+  margin-top: 30px;
+}
+
+.icon-button a i {
+  background-color: #f35525;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 50px;
+  display: inline-block;
+  margin-right: 15px;
+  margin-left: -1px;
+}
+
+.fa-calendar::before {
+  content: "\F1F7";
+}
+
+.caldendar-btn {
+  z-index: 1;
+  top: -3px;
+  left: -10px;
+  height: 40px;
+  width: 40px;
+  background-color: #f84712;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.icon-button {
+  position: relative;
+}
+.icon-button button {
+  width: 250px;
+  border-radius: 20px;
+  position: relative;
+  color: white;
+}
+
+.icon-button button:hover {
+  color: #f84712;
+}
+
+.caldendar-icon {
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+  z-index: 2;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-button-1 button {
+  width: 200px;
+  border-radius: 20px;
+  position: relative;
+  color: white;
+}
+
+.icon-button-1 button:hover {
+  color: #f84712;
+}
+
+.icon-button-1 {
+  position: relative;
+}
+
+.nav-item a:hover {
+  color: #f84712 !important;
+  transition: all 0.5 ease-in-out;
+}
+
+.navbar-brand{
+   font-size: 30px !important;
+}
