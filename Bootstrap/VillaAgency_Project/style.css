@@ -431,6 +431,71 @@
   transition: all 0.5 ease-in-out;
 }
 
-.navbar-brand{
-   font-size: 30px !important;
+.navbar-brand {
+  font-size: 30px !important;
+}
+
+/* properties section */
+
+.property-text {
+  text-align: center;
+}
+
+.luxury-text {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.luxury-text p {
+  background-color: #fbd9cf;
+  padding: 5px;
+}
+
+.luxury-text h6 {
+  color: #f84712;
+  font-size: 18px;
+}
+
+.property1 {
+  padding: 10px;
+}
+.property1 ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.property1 ul li span {
+  font-weight: bold;
+}
+
+.property1 .main-button {
+  text-align: center;
+}
+
+.property1 .main-button a {
+  display: inline-block;
+  background-color: #1e1e1e;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 40px;
+  padding: 0px 30px;
+  border-radius: 25px;
+  transition: all 0.3s;
+}
+
+.property-text {
+  text-align: center;
+}
+
+.property1 {
+  padding: 10px;
+  text-align: center; /* ✅ centers text and inline elements */
+}
+
+.custom-gap > [class*="col-"] {
+  padding-left: 12px;
+  padding-right: 12px;
 }
