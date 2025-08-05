@@ -21,9 +21,14 @@
 .bi-pencil-square {
   font-size: 36px;
 }
-
-@media screen and (max-width: 480px) {
-  .col-5 {
-    width: 100.666667% !important;
-  }
+.card img {
+  height: 20px;
+  width: 20px;
 }
+.card-content h1 {
+  font-size: 10px;
+}
+
+ .video-view{
+  height: 120vh;
+ } 
