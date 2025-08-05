@@ -12,25 +12,18 @@
   color: white;
 }
 
-.carousel-caption h5 {
-  background-color: white;
-  width: 186px;
-  padding: 10px;
-  border-radius: 2px;
-}
-
-.carousel-caption h5 span {
-  color: orangered;
-}
-
 .carousel-caption h2 {
-  width: 186px;
-  padding: 10px;
-  text-align: left;
-  color: white;
-  font-size: 62px;
-  letter-spacing: 1px;
+  font-size: 58px;
   font-weight: 800;
-  line-height: 72px;
-  width: 50%;
+  color: white;
+}
+
+.bi-pencil-square {
+  font-size: 36px;
+}
+
+@media screen and (max-width: 480px) {
+  .col-5 {
+    width: 100.666667% !important;
+  }
 }
