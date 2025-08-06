@@ -29,6 +29,19 @@
   font-size: 10px;
 }
 
- .video-view{
+.video-view {
   height: 120vh;
- } 
+}
+
+.card-12 {
+  background-color: #fbd9cf !important;
+}
+@media screen and (max-width: 480px) {
+  .blur-image {
+    width: 100%;
+  }
+
+  .bluepillow {
+    width: 100%;
+  }
+}
