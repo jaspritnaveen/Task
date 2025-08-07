@@ -7,6 +7,9 @@
   color: #f35525 !important;
 }
 
+.carousel-caption {
+  margin-bottom: 200px;
+}
 .carousel-caption p {
   font-size: 48px;
   color: white;
@@ -36,12 +39,49 @@
 .card-12 {
   background-color: #fbd9cf !important;
 }
-@media screen and (max-width: 480px) {
-  .blur-image {
-    width: 100%;
+
+.play-button {
+  background-color: #f35525aa;
+}
+
+.play-button i {
+  color: white;
+  font-size: 59px;
+}
+
+.video-heading {
+  font-size: 2rem;
+}
+
+.play-button {
+  width: 80px;
+  height: 80px;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 576px) {
+  .video-subtitle {
+    font-size: 0.85rem;
   }
 
-  .bluepillow {
-    width: 100%;
+  .video-heading {
+    font-size: 11px;
+  }
+
+  .play-button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .img-pillow {
+    width: 195px;
+  }
+
+  .bi-play-circle-fill {
+    font-size: 1.5rem !important;
+  }
+
+  .video-view {
+    height: 35vh;
   }
 }
