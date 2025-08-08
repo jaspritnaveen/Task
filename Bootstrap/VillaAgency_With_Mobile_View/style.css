@@ -24,10 +24,7 @@
 .bi-pencil-square {
   font-size: 36px;
 }
-.card img {
-  height: 20px;
-  width: 20px;
-}
+
 .card-content h1 {
   font-size: 10px;
 }
@@ -56,6 +53,17 @@
 .play-button {
   width: 80px;
   height: 80px;
+}
+
+.villa-badge {
+  background-color: #fde3d8;
+  color: #000;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+.villa-price {
+  color: #ff6b35;
+  font-weight: 700;
 }
 
 /* Mobile view adjustments */
