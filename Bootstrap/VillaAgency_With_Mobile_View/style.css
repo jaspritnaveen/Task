@@ -66,6 +66,22 @@
   font-weight: 700;
 }
 
+.villa-bgg {
+  background-color: rgb(246, 237, 237);
+}
+
+.contact-page {
+  background-image: url("Assets/contactpage.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 100px 0px 250px;
+   
+}
+
+
+
+
 /* Mobile view adjustments */
 @media (max-width: 576px) {
   .video-subtitle {
