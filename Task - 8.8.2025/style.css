@@ -159,7 +159,7 @@
 
 .contact-right {
   background: rgba(255, 255, 255, 0.05);
-  height: 540px;
+  height: 520px;
   width: 360px;
   border-radius: 5px;
   padding: 30px;
@@ -196,12 +196,12 @@
 }
 
 .one {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 #lab {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-size: 11px;
 }
 
@@ -219,10 +219,40 @@
   align-items: center;
 }
 
-.icon-div ul li:hover, .first:hover {
+.icon-div ul li:hover,
+.first:hover {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   border-color: transparent;
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
-  color: #fff;  
+  color: #fff;
+}
+
+.error {
+  color: red;
+  font-size: smaller;
+  margin-top: 5px;
+}
+
+/* Footer */
+
+footer {
+  background-color: #1a1a2e;
+  color: whitesmoke;
+  height: 90px;
+  width: auto;
+  padding: 20px;
+}
+
+.footer-right ul li {
+  display: inline-flex;
+  gap: 10px;
+}
+
+.footer-combine {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 0 20px;
 }
