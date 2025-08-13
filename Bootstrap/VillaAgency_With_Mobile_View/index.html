@@ -28,10 +28,43 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
+    <div class="container border-bottom py-2">
+      <div class="d-flex justify-content-between align-items-center flex-wrap">
+        <!-- Left side: Email & Location -->
+        <div class="d-flex align-items-center gap-4 flex-wrap">
+          <div class="d-flex align-items-center gap-2">
+            <i class="bi bi-envelope-fill text-danger"></i>
+            <span class="text-muted">info@company.com</span>
+          </div>
+          <div class="vr"></div>
+          <div class="d-flex align-items-center gap-2">
+            <i class="bi bi-map-fill text-danger"></i>
+            <span class="text-muted">Sunny Isles Beach, FL 33160</span>
+          </div>
+        </div>
+
+        <!-- Right side: Social Icons -->
+        <div class="d-flex align-items-center gap-2 mt-2 mt-md-0">
+          <a href="#" class="text-secondary fs-5"
+            ><i class="bi bi-facebook"></i
+          ></a>
+          <a href="#" class="text-secondary fs-5"
+            ><i class="bi bi-twitter"></i
+          ></a>
+          <a href="#" class="text-secondary fs-5"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+          <a href="#" class="text-secondary fs-5"
+            ><i class="bi bi-instagram"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
     <nav class="navbar navbar-expand-lg py-4 navbar-light bg-light">
       <div class="container-fluid">
         <!-- Brand -->
-        <a class="navbar-brand" href="#">Villa</a>
+        <a class="navbar-brand fs-5" href="#">Villa</a>
 
         <!-- Toggler -->
         <button
@@ -196,7 +229,9 @@
 
           <!-- Accordion Column -->
           <div class="col-12 col-lg-4">
-            <h6 class="text-uppercase text-muted small">| Featured</h6>
+            <h6 class="text-uppercase text-muted small feature-txt">
+              | Featured
+            </h6>
             <h2 class="h4 fw-bold">Best Apartment <br />& Sea view</h2>
             <div class="accordion p-1" id="accordionPanelsStayOpenExample">
               <!-- Accordion Item 1 -->
@@ -286,7 +321,7 @@
           </div>
 
           <!-- Info Cards Column -->
-          <div class="col-12 col-lg-4">
+          <div class="col-12 col-lg-4 tfs-card">
             <div class="border rounded bg-white shadow-sm p-3">
               <div class="row gy-4">
                 <!-- Reusable Card Block -->
@@ -318,8 +353,8 @@
                       style="width: 50px; height: 50px"
                     />
                     <div class="ms-3">
-                      <h6 class="mb-0">250 m²</h6>
-                      <small class="text-muted">Total Flat Surface</small>
+                      <h6 class="mb-0">Contract</h6>
+                      <small class="text-muted">Contract Ready </small>
                     </div>
                   </div>
                 </div>
@@ -335,8 +370,8 @@
                       style="width: 50px; height: 50px"
                     />
                     <div class="ms-3">
-                      <h6 class="mb-0">250 m²</h6>
-                      <small class="text-muted">Total Flat Surface</small>
+                      <h6 class="mb-0">Payment</h6>
+                      <small class="text-muted">Payment Process </small>
                     </div>
                   </div>
                 </div>
@@ -352,8 +387,25 @@
                       style="width: 50px; height: 50px"
                     />
                     <div class="ms-3">
-                      <h6 class="mb-0">250 m²</h6>
-                      <small class="text-muted">Total Flat Surface</small>
+                      <h6 class="mb-0">Safety</h6>
+                      <small class="text-muted">24/7 Under Control </small>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-12">
+                  <div
+                    class="d-flex align-items-center p-2 border rounded bg-white shadow-sm"
+                  >
+                    <img
+                      src="Assets/flex2.png"
+                      alt="Not Found"
+                      style="width: 50px; height: 50px"
+                    />
+                    <div class="ms-3">
+                      <h6 class="mb-0">Parking</h6>
+                      <small class="text-muted">2 Car Spaces Available</small>
                     </div>
                   </div>
                 </div>
@@ -394,7 +446,9 @@
           <div
             class="play-button rounded-circle d-flex justify-content-center align-items-center"
           >
-            <i class="bi bi-play-circle-fill fs-2"></i>
+            <a href="http://www.youtube.com" target="_blank">
+              <i class="bi bi-play-circle-fill fs-2"></i
+            ></a>
           </div>
         </div>
       </div>
@@ -402,87 +456,71 @@
 
     <section>
       <div class="container">
-        <div class="row">
-          <!-- Card - 1 -->
-          <div class="col-md-4 p-2">
+        <div class="row text-center">
+          <!-- Card 1 -->
+          <div class="col-12 col-md-4 p-3">
             <div
-              class="card mb-3 position-relative card-12"
-              style="max-width: 18rem"
+              class="card mx-auto border-0 rounded position-relative"
+              style="max-width: 18rem; background-color: #fff3ef"
             >
-              <!-- Orange Circle -->
               <div
                 class="position-absolute top-0 start-100 translate-middle rounded-circle"
                 style="width: 40px; height: 40px; background-color: #f35525"
               ></div>
-
-              <div class="card-body">
-                <div
-                  class="card-text d-flex justify-content-center gap-3 align-items-center"
-                >
-                  <h1>34</h1>
-                  <div class="para-text">
-                    <p>
-                      Buildings <br />
-                      Finished Now
-                    </p>
-                  </div>
+              <div
+                class="card-body d-flex justify-content-center align-items-center gap-3"
+              >
+                <div class="flex-shrink-0 text-end" style="width: 60px">
+                  <h1 class="fw-bold text-danger mb-0">34</h1>
                 </div>
-              </div>
-            </div>
-          </div>
-          <!-- Card-2 -->
-
-          <div class="col-md-4 p-2">
-            <div
-              class="card mb-3 position-relative card-12"
-              style="max-width: 18rem"
-            >
-              <!-- Orange Circle -->
-              <div
-                class="position-absolute top-0 start-100 translate-middle rounded-circle"
-                style="width: 40px; height: 40px; background-color: #f35525"
-              ></div>
-
-              <div class="card-body">
-                <div
-                  class="card-text d-flex justify-content-center gap-3 align-items-center"
-                >
-                  <h1>34</h1>
-                  <div class="para-text">
-                    <p>
-                      Buildings <br />
-                      Finished Now
-                    </p>
-                  </div>
+                <div class="flex-grow-1 text-start">
+                  <p class="fw-semibold mb-0">Buildings<br />Finished Now</p>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Card-3 -->
-
-          <div class="col-md-4 p-2">
+          <!-- Card 2 -->
+          <div class="col-12 col-md-4 p-3">
             <div
-              class="card mb-3 position-relative card-12"
-              style="max-width: 18rem"
+              class="card mx-auto border-0 rounded position-relative"
+              style="max-width: 18rem; background-color: #fff3ef"
             >
-              <!-- Orange Circle -->
               <div
                 class="position-absolute top-0 start-100 translate-middle rounded-circle"
                 style="width: 40px; height: 40px; background-color: #f35525"
               ></div>
+              <div
+                class="card-body d-flex justify-content-center align-items-center gap-3"
+              >
+                <div class="flex-shrink-0 text-end" style="width: 60px">
+                  <h1 class="fw-bold text-danger mb-0">12</h1>
+                </div>
+                <div class="flex-grow-1 text-start">
+                  <p class="fw-semibold mb-0">Years<br />Experience</p>
+                </div>
+              </div>
+            </div>
+          </div>
 
-              <div class="card-body">
-                <div
-                  class="card-text d-flex justify-content-center gap-3 align-items-center"
-                >
-                  <h1>34</h1>
-                  <div class="para-text">
-                    <p>
-                      Buildings <br />
-                      Finished Now
-                    </p>
-                  </div>
+          <!-- Card 3 -->
+          <div class="col-12 col-md-4 p-3">
+            <div
+              class="card mx-auto border-0 rounded position-relative"
+              style="max-width: 18rem; background-color: #fff3ef"
+            >
+              <div
+                class="position-absolute top-0 start-100 translate-middle rounded-circle"
+                style="width: 40px; height: 40px; background-color: #f35525"
+              ></div>
+              <div
+                class="card-body d-flex justify-content-center align-items-center gap-3"
+              >
+                <div class="flex-shrink-0 text-end" style="width: 60px">
+                  <h1 class="fw-bold text-danger mb-0">24</h1>
+                </div>
+                <div class="flex-grow-1 text-start">
+                  <p class="fw-semibold mb-0">Awards<br />Won 2023</p>
                 </div>
               </div>
             </div>
@@ -753,7 +791,7 @@
     <section class="luxury-villa py-5">
       <div class="container">
         <div class="luxury-villa-text text-center">
-          <h5>| Properties</h5>
+          <h5 class="text-danger">| Properties</h5>
           <h1>We Provide The Best <br />Property You Like</h1>
         </div>
 
@@ -1081,30 +1119,143 @@
       </div>
     </section>
 
-    <section class="contact-page position-relative">
-      <div class="contact-page-text text-center">
-        <h5 class="text-danger">| Contact Us</h5>
-        <h1 class="text-white fw-5">
-          Get In Touch With <br />
-          Our Agents
-        </h1>
-      </div>
-
+    <section class="contactsection py-5 position-relative contact-page">
       <div class="container">
-        <div class="position-absolute top-50 start-0">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7779.883616705326!2d80.2200167634035!3d12.847035059914724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525a51439fd9f3%3A0x5fdacd19ed90126c!2sNavalur%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1754639760706!5m2!1sen!2sin"
-            width="600"
-            height="450"
-            style="border: 0" 
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            class="rounded"
-          ></iframe>
+        <!-- Heading -->
+        <div class="row">
+          <div class="col-md-12 text-center py-3">
+            <h4 class="text-danger">| Contact Us</h4>
+            <h1 class="text-white">Get In Touch With Our Agents</h1>
+          </div>
+        </div>
+
+        <!-- Content Row -->
+        <div class="row contact-row">
+          <!-- Map & Contact Cards -->
+          <div class="col-md-7">
+            <!-- Map -->
+            <!-- Map -->
+            <div class="mb-4 ratio ratio-16x9">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7779.883616705326!2d80.2200167634035!3d12.847035059914724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525a51439fd9f3%3A0x5fdacd19ed90126c!2sNavalur%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1754639760706!5m2!1sen!2sin"
+                class="rounded shadow"
+                allowfullscreen
+                loading="lazy"
+                style="border: 0"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+
+            <!-- Contact Cards -->
+            <div class="row g-3 contact-card" style="margin-top: 35px">
+              <div class="col-12 col-sm-6 col-md-auto">
+                <div
+                  class="card shadow border-0 p-4 d-flex align-items-center flex-row"
+                  style="max-width: 300px"
+                >
+                  <div class="me-3">
+                    <img
+                      src="Assets/telephone-icon.png"
+                      alt="Phone Icon"
+                      width="35"
+                    />
+                  </div>
+                  <div>
+                    <h6 class="fw-bold mb-0">010-020-0340</h6>
+                    <small class="text-muted">Phone Number</small>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-6 col-md-auto">
+                <div
+                  class="card shadow border-0 p-4 d-flex align-items-center flex-row"
+                  style="max-width: 300px"
+                >
+                  <div class="me-3">
+                    <img
+                      src="Assets/message-icon.png"
+                      alt="Email Icon"
+                      width="35"
+                    />
+                  </div>
+                  <div>
+                    <h6 class="fw-bold mb-0">info@villa.co</h6>
+                    <small class="text-muted">Business Email</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form -->
+          <div class="col-md-5">
+            <div class="card shadow p-4 bg-light text-dark mt-4 mt-md-0">
+              <form>
+                <!-- Full Name -->
+                <div class="mb-3">
+                  <label class="form-label">Full Name</label>
+                  <input
+                    type="text"
+                    class="form-control rounded-pill bg-white"
+                    placeholder="Your Name..."
+                  />
+                </div>
+
+                <!-- Email -->
+                <div class="mb-3">
+                  <label class="form-label">Email Address</label>
+                  <input
+                    type="email"
+                    class="form-control rounded-pill bg-white"
+                    placeholder="Your Email..."
+                  />
+                </div>
+
+                <!-- Subject -->
+                <div class="mb-3">
+                  <label class="form-label">Subject</label>
+                  <input
+                    type="text"
+                    class="form-control rounded-pill bg-white"
+                    placeholder="Your Subject..."
+                  />
+                </div>
+
+                <!-- Message -->
+                <div class="mb-3">
+                  <label class="form-label">Message</label>
+                  <textarea
+                    class="form-control bg-white"
+                    rows="4"
+                    style="border-radius: 15px"
+                    placeholder="Your Message..."
+                  ></textarea>
+                </div>
+
+                <!-- Submit -->
+                <button
+                  type="submit"
+                  class="btn text-white px-4 py-2"
+                  style="background-color: black; border-radius: 25px"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+
+    <footer>
+      <div class="bg-dark">
+        <div class="text-center text-white p-4">
+          Copyright © 2048 Villa Agency Co., Ltd. All rights reserved. Design:
+          TemplateMo
+        </div>
+      </div>
+    </footer>
 
     <script>
       AOS.init();

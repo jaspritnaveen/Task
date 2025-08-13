@@ -15,6 +15,10 @@
   color: white;
 }
 
+.navbar-brand{
+  font-size: 30px;
+}
+
 .carousel-caption h2 {
   font-size: 58px;
   font-weight: 800;
@@ -31,6 +35,7 @@
 
 .video-view {
   height: 120vh;
+  margin-top: 20px;
 }
 
 .card-12 {
@@ -73,15 +78,25 @@
 .contact-page {
   background-image: url("Assets/contactpage.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  padding: 100px 0px 250px;
-   
+  background-size: auto;
 }
 
+.contact-card {
+  margin-top: 29px;
+}
 
+.c5 {
+  margin-top: 30px !important;
+}
 
+.contact-row {
+  margin-top: 90px !important;
+}
 
+.tfs-card {
+  margin-left: 0px;
+  max-width:350px !important;
+}
 /* Mobile view adjustments */
 @media (max-width: 576px) {
   .video-subtitle {
@@ -107,5 +122,13 @@
 
   .video-view {
     height: 35vh;
+  }
+
+  .contact-card {
+    margin-top: 118px !important;
+  }
+
+  .feature-txt {
+    margin-top: 35px;
   }
 }
