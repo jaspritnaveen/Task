@@ -15,7 +15,7 @@
   color: white;
 }
 
-.navbar-brand{
+.navbar-brand {
   font-size: 30px;
 }
 
@@ -23,6 +23,10 @@
   font-size: 58px;
   font-weight: 800;
   color: white;
+}
+
+a.bg-secondary:hover {
+  background-color: #f35525 !important;
 }
 
 .bi-pencil-square {
@@ -95,7 +99,7 @@
 
 .tfs-card {
   margin-left: 0px;
-  max-width:350px !important;
+  max-width: 350px !important;
 }
 /* Mobile view adjustments */
 @media (max-width: 576px) {
@@ -130,5 +134,9 @@
 
   .feature-txt {
     margin-top: 35px;
+  }
+
+  .top-nav{
+    display: none !important;
   }
 }
