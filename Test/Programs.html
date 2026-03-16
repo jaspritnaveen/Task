@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+
+  <script>
+    // Palindrome
+    let name = "131";
+    let tempname = name;
+    let start = 0;
+    let end = name.length - 1;
+    let chararr = name.split("");
+
+    while (start < end) {
+      var temp = chararr[start];
+      chararr[start] = chararr[end];
+      chararr[end] = temp;
+
+      start++;
+      end--;
+    }
+
+    var reverse = chararr.join("");
+    if (tempname === reverse) {
+      console.log("Palindrome");
+    } else {
+      console.log("Not Palindrome");
+    }
+
+    // Fibbonacci
+
+    let num1 = 0;
+    let num2 = 1;
+
+    let ends = 10;
+    for (let i = 2; i < ends; i++) {
+      var nextterm = num1 + num2;
+      console.log(nextterm);
+      num1 = num2;
+      num2 = nextterm;
+    }
+
+    // Prime number
+
+    let primenum = 898;
+    let flag = true;
+
+    if (primenum === 0 || primenum === 1) {
+      flag = false;
+    } else {
+      for (let i = 0; i <= primenum / 2; i++) {
+        if (primenum % 2 === 0) {
+          flag = false;
+          break;
+        }
+      }
+    }
+
+    if (flag) {
+      console.log(primenum + " is Prime");
+    } else {
+      console.log(primenum + " is Not Prime");
+    }
+  </script>
+</html>

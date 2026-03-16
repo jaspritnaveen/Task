@@ -1,0 +1,22 @@
+.home-page {
+  height: 100vh;
+  background: 
+    linear-gradient(
+      90deg,
+      rgba(42, 123, 155, 0.382) 0%,
+      rgba(87, 199, 134, 0.501) 50%,
+      rgba(237, 221, 83, 0.401) 100%
+    ),
+    url("img1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.blurred {
+      filter: blur(10px); 
+    }
+
+
+    

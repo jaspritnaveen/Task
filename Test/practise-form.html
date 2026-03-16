@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      form {
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        background-color: tan;
+        gap: 10px;
+      }
+
+      form input {
+        outline: none;
+        height: 30px;
+        border: none;
+      }
+
+      #btn {
+        cursor: pointer;
+      }
+
+      .error {
+        color: red;
+        font-weight: 600;
+      }
+      .success input {
+        border: green;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="myform">
+      <label>first name</label>
+      <input type="text" id="fname" />
+      <span class="error" id="fname-error"></span>
+
+      <label>Last name</label>
+      <input type="text" id="lname" />
+      <span class="error" id="lname-error"></span>
+
+      <label>Email</label>
+      <input type="text" id="email" />
+      <span class="error" id="email-error"></span>
+
+      <label>Message</label>
+      <input type="text" id="msg" />
+      <span class="error" id="msg-error"></span>
+
+      <input type="submit" value="Submit" id="btn" />
+    </form>
+
+    <script>
+      var formid = document.getElementById("myform");
+
+      formid.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        var fnameid = document.getElementById("fname");
+        var lnameid = document.getElementById("lname");
+        var emailid = document.getElementById("email");
+        var msgid = document.getElementById("msg");
+
+        var fnameval = fnameid.value;
+        var lnameval = lnameid.value;
+        var emailval = emailid.value;
+        var msgval = msgid.value;
+
+        let valid = true;
+
+        document
+          .querySelectorAll(".error")
+          .forEach((er) => (er.textContent = ""));
+
+        if (fnameval.trim() === "") {
+          document.getElementById("fname-error").textContent =
+            "Please enter name";
+          fnameid.classList.add(".error");
+          valid = false;
+        } else {
+          fnameid.classList.add(".success");
+        }
+
+        if (lnameval.trim() === "") {
+          document.getElementById("lname-error").textContent =
+            "Please enter last name";
+          lnameid.classList.add(".error");
+          valid = false;
+        }
+
+        if (emailval.trim() === "") {
+          document.getElementById("email-error").textContent =
+            "Please enter last name";
+          emailid.classList.add(".error");
+          valid = false;
+        }
+
+        if (msgval.trim() === "") {
+          document.getElementById("msg-error").textContent =
+            "Please enter last name";
+          msgid.classList.add(".error");
+          valid = false;
+        }
+
+        if (valid) {
+          console.log(fnameval);
+          console.log(lnameval);
+          console.log(emailval);
+          console.log(msgval);
+
+          formid.reset();
+        }
+      });
+    </script>
+  </body>
+</html>

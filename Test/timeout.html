@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+
+  <script>
+    function greeting(news, name) {
+      console.log(news + " ", name);
+    }
+
+    // Only one time runs
+    // setTimeout(greeting, 3000, "Good morning", "NK");
+
+
+    // Runs every 3 seconds
+    setInterval(greeting, 3000, "Good morning", "NK");
+  </script>
+</html>

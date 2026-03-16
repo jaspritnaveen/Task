@@ -1,0 +1,12 @@
+.second {
+  padding: 24px;
+  background: #e8f7ff;
+  border-radius: 12px;
+  margin: 24px;
+  text-align: center;
+}
+
+.second h2 {
+  color: darkgreen;
+  margin: 0 0 8px;
+}

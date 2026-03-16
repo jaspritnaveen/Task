@@ -1,0 +1,40 @@
+.scroll-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.card-body {
+  display: flex;
+  gap: 10px 20px;
+  animation: scroll-left 10s linear infinite;
+}
+
+.cards {
+  min-width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    
+}
+
+.cards:hover{
+    transform: translateX(5px); 
+    cursor: pointer;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+ 

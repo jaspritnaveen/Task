@@ -1,0 +1,259 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Single Page Portfolio</title>
+
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      /* ===== HEADER ===== */
+      header {
+        background: linear-gradient(to right, #7b2cbf, #9d4edd);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 60px;
+      }
+
+      /* Left Profile Box */
+      .profile-box {
+        background-color: #5a189a;
+        padding: 12px 20px;
+        border-radius: 6px;
+        color: white;
+      }
+
+      .profile-box h2 {
+        margin: 0;
+        font-size: 22px;
+        font-weight: bold;
+      }
+
+      .profile-box p {
+        margin: 4px 0;
+        font-size: 13px;
+      }
+
+      /* ===== NAVIGATION ===== */
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 35px;
+        font-size: 16px;
+        transition: 0.3s;
+      }
+
+      /* Hover Requirements */
+      nav a:hover {
+        font-weight: bold; /* Bold */
+        text-decoration: underline; /* Underline */
+        cursor: pointer; /* Finger pointer */
+      }
+
+      /* Dummy sections for scrolling */
+      section {
+        padding: 80px;
+      }
+
+      h1 {
+        color: #7b2cbf;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <!-- LEFT SIDE (Task 1 Requirement) -->
+      <div class="profile-box">
+        <h2>NAVEENKUMAR R</h2>
+        <p>📧 jaspritnaveen@email.com</p>
+        <p>📞 +91 6383146128</p>
+      </div>
+
+      <!-- RIGHT SIDE NAVBAR (Task 2 Requirement) -->
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Project details</a>
+        <a href="#skills">Skills</a>
+        <a href="#recommendations">Recommendations</a>
+      </nav>
+    </header>
+
+    <!-- Dummy Sections -->
+    <section id="about">
+      <div class="about-container">
+        <!-- Unique Profile Image -->
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+          alt="Profile Image"
+        />
+
+        <!-- About Text -->
+        <div class="about-text">
+          <h1>Hi, I'm Naveenkumar R</h1>
+          <p>
+            I am a passionate Full Stack Developer with strong experience in
+            Java, JavaScript, React and SQL. I enjoy building scalable web
+            applications, solving real-world problems, and continuously
+            improving my technical skills. I have worked on projects like Book
+            Management System and Library Management System, focusing on clean
+            design and performance.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="skills-container">
+        <!-- Original Skill 1 -->
+        <div class="skill-card">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/732/732212.png"
+            alt="HTML"
+          />
+          <h3>HTML</h3>
+          <p>4 years experience</p>
+        </div>
+
+        <!-- Original Skill 2 -->
+        <div class="skill-card">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png"
+            alt="CSS"
+          />
+          <h3>CSS</h3>
+          <p>4 years experience</p>
+        </div>
+
+        <!-- NEW Skill 1 -->
+        <div class="skill-card">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/5968/5968381.png"
+            alt="JavaScript"
+          />
+          <h3>JavaScript</h3>
+          <p>3 years experience</p>
+        </div>
+
+        <!-- NEW Skill 2 -->
+        <div class="skill-card">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/919/919851.png"
+            alt="React"
+          />
+          <h3>React</h3>
+          <p>2 years experience</p>
+        </div>
+
+        <!-- NEW Skill 3 -->
+        <div class="skill-card">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/919/919825.png"
+            alt="Node.js"
+          />
+          <h3>Node.js</h3>
+          <p>2 years experience</p>
+        </div>
+
+        <div class="skill-card">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/919/919841.png"
+            alt="Node.js"
+          />
+          <h3>C++</h3>
+          <p>2 years experience</p>
+        </div>
+
+      </div>
+    </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project-item">
+        <h3>Book Management System</h3>
+        <ul>
+            <li>Developed a full-stack web application to manage books with CRUD operations using Java, Spring Boot and MySQL.</li>
+        </ul>
+        <hr>
+    </div>
+
+    <div class="project-item">
+        <h3>Online Examination Portal</h3>
+        <ul>
+            <li>Built a responsive examination system with secure login, timer-based tests, and automatic result calculation using React and REST APIs.</li>
+        </ul>
+        <hr>
+    </div>
+
+    <div class="project-item">
+        <h3>Student Result Management System</h3>
+        <ul>
+            <li>Designed and implemented a portal for managing and publishing student results with admin dashboard and database integration.</li>
+        </ul>
+    </div>
+
+</section>
+
+
+   <section id="recommendations">
+    <h2>Recommendations</h2>
+
+    <div class="recommendation-container">
+
+        <div class="recommendation-card">
+            "Naveenkumar is a highly dedicated developer who consistently delivers clean and efficient solutions. 
+            He has strong analytical skills and approaches every task with confidence and professionalism."
+        </div>
+
+        <div class="recommendation-card">
+            "Working with Naveenkumar was a great experience. His problem-solving ability and deep understanding 
+            of full-stack development make him a valuable asset to any technical team."
+        </div>
+
+        <div class="recommendation-card">
+            "Naveenkumar demonstrates excellent teamwork and communication skills. 
+            He quickly adapts to new technologies and always strives for continuous improvement."
+        </div>
+
+    </div>
+</section>
+
+
+<section id="recommendations">
+    <h2>Recommendations</h2>
+
+    <div class="recommendation-container">
+
+        <div class="recommendation-card">
+            "Naveenkumar is a highly dedicated developer who consistently delivers clean and efficient solutions.
+            He has strong analytical skills and approaches every task with confidence and professionalism."
+        </div>
+
+        <div class="recommendation-card">
+            "Working with Naveenkumar was a great experience. His problem-solving ability and deep understanding
+            of full-stack development make him a valuable asset to any technical team."
+        </div>
+
+        <div class="recommendation-card">
+            "Naveenkumar demonstrates excellent teamwork and communication skills.
+            He quickly adapts to new technologies and always strives for continuous improvement."
+        </div>
+
+        <!-- NEW ADDED RECOMMENDATION (Task 7) -->
+        <div class="recommendation-card">
+            "Naveenkumar is a great mentor and collaborator. He shares knowledge openly and supports the team
+            in delivering high-quality solutions on time."
+        </div>
+
+    </div>
+</section>
+
+
+
+  </body>
+</html>

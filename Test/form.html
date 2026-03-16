@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        background-color: antiquewhite;
+        padding: 20px;
+        gap: 10px 30px;
+        border-radius: 20px;
+      }
+
+      form input {
+        height: 30px;
+        border-radius: 10px;
+        border: 2px solid transparent;
+        outline: none;
+        padding: 5px;
+      }
+
+      #btn {
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 18px;
+      }
+
+      .error {
+        color: red;
+        font-weight: 500;
+      }
+
+      .input-error {
+        border: 2px solid red;
+      }
+
+      .input-success {
+        border: 2px solid green;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="my-form">
+      <label> First Name</label>
+      <input type="text" id="fname" />
+      <span class="error" id="error-fname"></span>
+
+      <label> Last Name</label>
+      <input type="text" id="lname" />
+      <span class="error" id="error-lname"></span>
+
+      <label> Email</label>
+      <input type="text" id="email" />
+      <span class="error" id="error-email"></span>
+
+      <label> Message</label>
+      <input type="text" id="msg" />
+      <span class="error" id="error-msg"></span>
+
+      <input type="submit" value="Submit" id="btn" />
+    </form>
+
+    <script>
+      var formid = document.getElementById("my-form");
+
+      formid.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        // Get elements
+        var fnameEl = document.getElementById("fname");
+        var lnameEl = document.getElementById("lname");
+        var emailEl = document.getElementById("email");
+        var msgEl = document.getElementById("msg");
+
+        var valid = true;
+
+        // Reset all errors
+        document.getElementById("error-fname").textContent = "";
+        document.getElementById("error-lname").textContent = "";
+        document.getElementById("error-email").textContent = "";
+        document.getElementById("error-msg").textContent = "";
+
+        // First name
+        if (fnameEl.value.trim() === "") {
+          document.getElementById("error-fname").textContent =
+            "Please fill your first name";
+          fnameEl.className = "input-error";
+          valid = false;
+        } else {
+          fnameEl.className = "input-success";
+        }
+
+        // Last name
+        if (lnameEl.value.trim() === "") {
+          document.getElementById("error-lname").textContent =
+            "Please fill your last name";
+          lnameEl.className = "input-error";
+          valid = false;
+        } else {
+          lnameEl.className = "input-success";
+        }
+
+        // Email
+        if (emailEl.value.trim() === "") {
+          document.getElementById("error-email").textContent =
+            "Please fill your email";
+          emailEl.className = "input-error";
+          valid = false;
+        } else {
+          emailEl.className = "input-success";
+        }
+
+        // Message
+        if (msgEl.value.trim() === "") {
+          document.getElementById("error-msg").textContent =
+            "Please enter message";
+          msgEl.className = "input-error";
+          valid = false;
+        } else {
+          msgEl.className = "input-success";
+        }
+
+        if (valid) {
+          console.log(fnameEl.value, lnameEl.value, emailEl.value, msgEl.value);
+          formid.reset();
+
+          // After reset, remove green border
+          fnameEl.className = "";
+          lnameEl.className = "";
+          emailEl.className = "";
+          msgEl.className = "";
+        }
+      });
+    </script>
+  </body>
+</html>

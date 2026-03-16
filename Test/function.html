@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>
+      <p>Function declaration</p>
+      <p>Function Expression</p>
+      <p>Arrow Function</p>
+      <p>Immediately invoked function Expression</p>
+      <p>Generator function</p>
+    </h1>
+  </body>
+
+  <script>
+    // 1
+
+    function sumoftwo(a, b) {
+      return a + b;
+    }
+
+    console.log(sumoftwo(10, 20));
+
+    // 2
+
+    const multiply = function (mul1, mul2) {
+      return mul1 * mul2;
+    };
+
+    console.log(multiply(10, 23));
+
+    // 3
+    const subtract = (c, d) => {
+      return c - d;
+    };
+
+    console.log(subtract(50, 30));
+
+    // 4
+
+    const diwali = (function sweet() {
+      return "Ladoooo";
+    })();
+    console.log(diwali); 
+  </script>
+</html>

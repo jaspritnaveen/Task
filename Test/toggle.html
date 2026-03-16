@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hamburger Menu</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      nav {
+        background-color: cornflowerblue;
+      }
+
+      ul li {
+        list-style-type: none;
+        display: inline-block;
+        padding: 10px 15px;
+      }
+
+      ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 22px;
+      }
+
+      /* Hide hamburger button on desktop */
+      button {
+        display: none;
+        background: none;
+        border: none;
+        font-size: 30px;
+        cursor: pointer;
+        padding: 10px;
+      }
+
+      /* Mobile view */
+      @media screen and (max-width: 480px) {
+        button {
+          display: block;
+        }
+
+        nav {
+          display: none;
+          position: absolute;
+          top: 50px;
+          left: 10px;
+          background-color: cornflowerblue;
+          padding: 10px;
+          border-radius: 8px;
+        }
+
+        nav.active {
+          display: block;
+          transition: 1 ease-in-out;
+        }
+
+        ul li {
+          display: block;
+          padding: 10px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Hamburger button -->
+    <button id="menu-btn" aria-label="Open menu">&#9776;</button>
+
+    <!-- Navigation menu -->
+    <nav id="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <script>
+      const btn = document.getElementById("menu-btn");
+      const menu = document.getElementById("menu");
+
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

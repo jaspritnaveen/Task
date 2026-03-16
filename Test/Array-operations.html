@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+
+  <script>
+    let num = 1;
+    console.log(num);
+    num = 15;
+    console.log(num);
+    num = 15;
+    console.log(num);
+
+    var num2;
+    console.log(num2);
+
+    let num1;
+    console.log(num1);
+
+    const age = 10;
+    console.log(age);
+
+    // Data types
+
+    // 1. Primitive data types
+
+    // 1. String
+    // 2. boolean
+    // 3. undifined
+    // 4. null
+    // 5. number
+    // 6. symbol
+    // 7. bigint
+
+    console.log(typeof age);
+
+    // Date
+
+    let d = new Date();
+
+    console.log(d);
+
+    // Nullish operator
+
+    let name = null;
+
+    var result = name ?? "Guest";
+
+    console.log(result);
+
+    // Destructring
+    let fullname = "naveenkumar";
+
+    let [char1, char2] = fullname;
+
+    console.log(char1);
+    console.log(char2);
+
+    // Object
+    let obj = { name1: "manoj", age1: 18, city: "tiruppur" };
+
+    console.table(obj);
+
+    let { name1, age1 } = obj;
+
+    console.log(name1);
+    console.log(age1);
+
+    // Rest Operator
+    let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+    console.log(arr);
+
+    let [, , ...remeing] = arr;
+
+    console.log(remeing);
+
+    // String opearations
+    // concat
+    // charat
+    // split
+    // trim
+    // length
+    // toupper
+    // tolower
+    // indexof
+    // lastindexof
+    // slice
+    // splice
+    // split
+    // replace
+    // includes
+    // test
+
+    let twotable = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30];
+
+    twotable.push(10);
+    twotable.pop(2);
+
+    twotable.shift();
+    twotable.unshift();
+    console.log(twotable);
+  </script>
+</html>
