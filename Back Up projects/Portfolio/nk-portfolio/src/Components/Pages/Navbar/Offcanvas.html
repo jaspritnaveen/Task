@@ -1,0 +1,75 @@
+.nav-menu-toggle-btn i {
+  font-size: 26px;
+  border: 1px solid rgba(0, 0, 0, 0.707);
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
+}
+
+.nav-menu-toggle-btn i:hover {
+  color: white;
+  background-color: #6c63ff;
+  border: 1px solid white;
+}
+
+
+.nav-menu-toggle-btn:focus,
+.nav-menu-toggle-btn:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.nav-menu-toggle-btn {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0;
+}
+
+ @media (min-width: 794px) and (max-width: 1199.98px) {
+  .nav-menu-toggle-btn i {
+    display: none;
+  }
+} 
+
+
+
+
+// OffCanvasExample component
+function OffCanvasExample({ name, ...props }) {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  return (
+    <>
+      <Button
+        variant=""
+        onClick={handleShow}
+        className="me-2 d-flex align-items-center nav-menu-toggle-btn"
+      >
+        <i className="bi bi-list"></i>
+      </Button>
+
+      <Offcanvas show={show} onHide={handleClose} {...props}>
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+          Some text as placeholder. In real life you can have the elements you
+          have chosen. Like, text, images, lists, etc.
+        </Offcanvas.Body>
+      </Offcanvas>
+    </>
+  );
+}
+
+
+
+        {/* Offcanvas example button */}
+        <OffCanvasExample placement="end" name="Open Menu" />

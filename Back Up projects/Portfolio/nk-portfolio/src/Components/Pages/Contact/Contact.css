@@ -1,0 +1,23 @@
+form {
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+  background: rgba(18, 93, 158, 0.127);
+  padding: 60px;
+  gap: 8px 10px;
+  justify-content: center;
+  width: 500px;
+  border-radius: 10px;
+}
+
+form input,
+textarea {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.contact {
+  background-color: violet;
+}

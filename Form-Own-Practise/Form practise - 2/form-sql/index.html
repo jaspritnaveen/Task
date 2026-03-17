@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="form-page">
+      <div class="left-part">
+        <div class="box">
+          <h2>Registration</h2>
+          <div class="line"></div>
+
+          <form class="contents" id="sign-form">
+            <!--  -->
+            <input type="text" placeholder="Enter your name" id="name" />
+
+            <div class="error-message" id="name-error"></div>
+            <!--  -->
+            <input type="text" placeholder="Enter your email" id="email" />
+            <div class="error"></div>
+
+            <!--  -->
+            <input type="text" placeholder="Create password" id="pass" />
+            <div class="error"></div>
+
+            <!--  -->
+            <input type="text" placeholder="Conform password" id="cpass" />
+            <div class="error"></div>
+
+            <!--  -->
+            <div class="check-box">
+              <input type="checkbox" name="check" id="check" />
+              <p>I accepct all terms and conditions</p>
+            </div>
+
+            <!--  -->
+            <input type="submit" value="Register Now" id="button" />
+
+            <!--  -->
+            <div class="login-msg">
+              <p>Already have an account? <span>Login now</span></p>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="right-part">
+        <h1>
+          Beautiful <br />Sign Up <br />
+          Form
+        </h1>
+      </div>
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>

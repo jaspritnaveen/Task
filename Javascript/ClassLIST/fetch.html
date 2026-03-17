@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #btn {
+        margin-top: 20px;
+      }
+
+      .error {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="myform">
+      <input type="text" id="name" />
+      <div class="error" id="name-error"></div>
+      <input type="submit" id="btn" />
+    </form>
+  </body>
+  <script>
+    var myformid = document.getElementById("myform");
+
+    myformid.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      var fnameid = document.getElementById("name");
+
+      document.getElementById("name-error").textContent = "";
+
+      let valid = true;
+
+      var namestored = fnameid.value.trim();
+      if (namestored === "") {
+        document.getElementById("name-error").textContent =
+          "please enter a name";
+        valid = false;
+      } else if (!/^[a-z]+$/.test(namestored)) {
+        document.getElementById("name-error").textContent =
+          "Only  letters (a-z) allowed";
+        valid = false;
+      }
+
+      if (valid) {
+        console.log(fnameid.value);
+
+        myformid.reset();
+      }
+    });
+
+    fetch("https://jsonplaceholder.typicode.com/users/2")
+      .then((res) => res.json())
+      .then((output) => console.log(output))
+      .catch((err) => {
+        console.log(err);
+      });
+
+   
+  </script>
+</html>

@@ -1,0 +1,31 @@
+form div {
+  padding: 10px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.inputs input,
+textarea {
+  height: 30px;
+  width: 220px;
+  outline: none;
+}
+
+form {
+  background-color: rgba(13, 137, 69, 0.582);
+  height: 400px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error {
+  color: red;
+}

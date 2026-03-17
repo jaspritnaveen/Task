@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="menu">
+        <i class="bx bx-menu" id="toggle-btn"></i>
+      </div>
+
+      <div class="list">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    var toggle = document.getElementById("toggle-btn");
+
+    const navList = document.querySelector(".list");  
+
+   
+    toggle.addEventListener("click",()=>{
+      navList.classList.toggle("open");
+    })
+
+
+
+  </script>
+</html>

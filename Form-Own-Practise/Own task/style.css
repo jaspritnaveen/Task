@@ -1,0 +1,137 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.list-items ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px;
+}
+.list-items ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+ul li input {
+  border: none;
+  height: 30px;
+  width: 90px;
+  background-color: thistle;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: aquamarine;
+}
+
+.home-page {
+  height: 100vh;
+  background-color: skyblue;
+}
+
+.head {
+  font-size: 48px;
+  letter-spacing: 2px;
+  color: white;
+  font-weight: 100;
+}
+.price {
+  background-color: rgb(135, 235, 157);
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+}
+
+button {
+  padding: 10px;
+}
+
+.frm {
+  height: 500px;
+  width: 400px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+form input {
+  height: 50px;
+  width: 100%;
+  outline: none;
+  background-color: #e9e6e6;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+input::placeholder {
+  padding: 2px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+}
+
+form h2 {
+  text-align: center;
+  font-style: italic;
+  font-size: 30px;
+}
+
+h1 {
+  padding: 10px;
+}
+
+.home-page {
+  display: grid;
+  grid-template-columns: 500px 600px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#Reg {
+  height: 50px;
+  border-radius: 20px;
+  width: 90px;
+  border: none;
+  cursor: pointer;
+  margin: 0 auto;
+  background-color: tomato;
+  color: white;
+}
+
+p {
+  text-align: justify;
+  letter-spacing: 1px;
+  color: #dedede;
+  line-height: 30px;
+  padding: 10px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  nav {
+    display: block;
+  }
+
+  .home-page {
+    display: block;
+  }
+
+  .frm {
+    width: 318px;
+  }
+  .second-part {
+    margin-top: 40px;
+  }
+  .list-items ul li{
+    display: block;
+  }
+}

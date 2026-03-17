@@ -1,0 +1,98 @@
+/* Home Page */
+
+.home-page {
+  min-height: 90vh;
+  background-color: #cfd9e7 !important;
+  color: #2f2e41;
+}
+
+/* Left Part */
+
+.hero-title span {
+  color: #6c63ff;
+}
+
+.hero-title {
+  font-size: 48px !important;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.hero-subtitle {
+  text-align: justify;
+  line-height: 2;
+}
+
+.contact-iocn-part i {
+  color: black;
+}
+
+/* Contact Icon Part */
+
+.contact-icon-part ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  color: #2f2e41;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.contact-icon-part ul li:hover {
+  background-color: #6c63ff !important;
+  color: white !important;
+  transform: translateY(-1px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: white !important;
+  border-radius: 50%;
+  margin-right: 10px;
+  color: #2f2e41;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* Right Part */
+
+.profile-image img {
+  border-radius: 50% !important;
+  height: 350px;
+  width: 350px;
+  border: 12px solid whitesmoke;
+} 
+
+/* Home page Mobile View */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  /* Home page */
+  .home-page {
+    min-height: 40vh;
+  }
+
+  /* Left Part */
+
+  .hero-title {
+    font-size: 32px !important;
+    padding: 0 20px;
+  }
+
+  .hero-subtitle {
+    padding: 0 5px;
+  }
+
+  /* Right Part */
+
+  .profile-image img {
+    border-radius: 50% !important;
+    height: 240px;
+    width: 240px;
+    border: 12px solid whitesmoke;
+  }
+}

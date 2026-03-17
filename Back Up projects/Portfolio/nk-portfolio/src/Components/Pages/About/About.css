@@ -1,0 +1,24 @@
+.about-img {
+  height: 420px !important;
+  width: 252px;
+  border-radius: 10px;
+}
+
+.quick-info {
+  line-height: 35px;
+}
+
+
+.quick-info li a{
+    text-decoration: none;
+}
+
+
+
+
+/* Right side */
+
+.about-intro{
+    text-align: justify;
+    line-height: 30px;
+}

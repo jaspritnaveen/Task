@@ -1,0 +1,30 @@
+/* Make the section full width & center content */
+.welcome-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background-color: #f7f8fa; 
+}
+
+/* Style the card */
+.welcome-card {
+  max-width: 800px;
+  text-align: center;
+  background-color: #6c63ff; 
+  color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-card h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.welcome-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        height: 400px;
+        width: 550px;
+        padding: 5px;
+        background-color: rgba(47, 143, 167, 0.592);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        position: static;
+        
+      }
+
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #number {
+        font-size: 48px;
+        font-family: cursive;
+        text-align: center;
+        letter-spacing: 50px;
+        
+      }
+
+      #txt {
+        height: 40px;
+        width: 320px;
+        outline: none;
+        border: none;
+        padding: 5px;
+        background-color: #dedede;
+        border-radius: 5px;
+      }
+
+      #btn {
+        border: none;
+        height: 40px;
+        width: 90px;
+      }
+      button {
+        cursor: pointer;
+        background-color: rgba(137, 43, 226, 0.633);
+      }
+
+       .success {
+        color: green;
+        font-weight: bold;
+        font-size: 36px;
+      }
+
+       .failure {
+        color: red;
+        font-weight: bold;
+        font-size: 36px;
+      }
+
+      #message {
+        min-height: 40px;   
+        font-weight: bold;
+        font-size: 36px;
+        margin-top: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h2 id="number"></h2>
+      <input type="text" id="txt" />
+      <button type="button" onclick="VerifyOTP()" value="Submit" id="btn">
+        Submit
+      </button>
+
+     <p id="message"></p>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

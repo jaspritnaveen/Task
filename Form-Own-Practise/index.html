@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="form-section">
+      <form id="detailsform">
+        <h1>Contact Form</h1>
+        <div class="input-1">
+          <input type="text " placeholder="Firstname" id="name" />
+           <div class="error" id="error-name"></div>
+        </div>
+
+        <div class="input-1">
+          <input type=" text" placeholder="Email" id="email" />
+
+           <div class="error" id="error-mail"></div>
+        </div>
+
+        <div class="input-1">
+          <textarea
+            name="textares"
+            placeholder="Message"
+            id="message-box"
+          ></textarea>
+           <div class="error" id="error-msg"></div>
+        </div>
+
+        <input type="submit" id="btn" value="Submit" />
+      </form>
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>

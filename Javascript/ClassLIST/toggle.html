@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="toggle.css" />
+    <link
+      href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="toggle">
+          <i class="bxr bx-menu-wider" id="mobiletoggle"></i>
+          <br />
+        </div>
+        <ul class="mainmenu" id="menusss">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <script>
+      var togglemenu = document.getElementById("mobiletoggle");
+      var menulink = document.getElementById("menusss");
+
+      togglemenu.addEventListener("click", () => {
+        menulink.classList.toggle("open");
+      });
+    </script>
+  </body>
+</html>
