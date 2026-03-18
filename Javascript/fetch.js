@@ -26,7 +26,7 @@ console.log(arr2);
 console.log(arr3);
 
 
- 
+len  = arr1.length;
 
 console.log(len);
 
